@@ -3,8 +3,8 @@
     import { faDownload } from '@fortawesome/free-solid-svg-icons';
 </script>
 
-<div class="flex flex-col justify-center min-h-screen gap-4 px-8 py-24 md:px-32">
-    <h1 class="text-purple-700 text-7xl font-bold">Resume</h1>
+<div class="flex flex-col justify-center gap-4 px-8 pt-24 md:px-32">
+    <h1 class="text-purple-700 text-6xl font-bold">Resume</h1>
     <p class="md:text-xl">
         You can download my resume with the button below (Updated 20 July 2022).
     </p>

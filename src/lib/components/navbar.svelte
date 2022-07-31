@@ -5,11 +5,11 @@
     </button>
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
         <ul class="flex flex-col p-4 mt-4 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 justify-end">
-            <li><a href="/#about-me">About Me</a></li>
-            <li><a href="/#projects">Projects</a></li>
-            <!-- <li><a href="/#experience">Experience</a></li> -->
-            <li><a href="/#resume">Resume</a></li>
-            <li><a href="/#contact-me">Contact Me</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
         </ul>
     </div>
 </nav>

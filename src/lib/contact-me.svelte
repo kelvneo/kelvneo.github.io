@@ -4,8 +4,8 @@
     import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 </script>
 
-<div class="flex flex-col justify-center min-h-screen gap-4 px-8 py-24 md:px-32">
-    <h1 class="text-purple-700 text-7xl font-bold">Contact Me</h1>
+<div class="flex flex-col justify-center gap-4 px-8 py-24 md:px-32">
+    <h1 class="text-purple-700 text-6xl font-bold">Contact Me</h1>
     <p class="md:text-xl">
         Reach me at the following platforms:
     </p>
