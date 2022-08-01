@@ -1,8 +1,8 @@
 <script>
-import Navbar from "$lib/components/navbar.svelte";
-import "../app.css";
+	import Navbar from '$lib/components/navbar.svelte';
+	import '../app.css';
 </script>
 
-<Navbar></Navbar>
+<Navbar />
 
 <slot />
