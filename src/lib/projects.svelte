@@ -40,7 +40,7 @@ const data: any[] = [
 </script>
 
 <div class="flex flex-col justify-center gap-8 px-8 pt-32 md:px-32">
-    <h1 class="text-purple-700 text-6xl font-bold">Projects</h1>
+    <h1 class="text-purple-700 text-5xl font-bold md:text-6xl">Projects</h1>
     <div class="flex flex-col justify-center gap-16">
         {#each data as proj}
             <Project {...proj}></Project>
