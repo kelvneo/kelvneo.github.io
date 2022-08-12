@@ -9,6 +9,7 @@
 
 <svelte:head>
 	<title>Kelvin Neo</title>
+	<meta name="description" content="Hello! I am Kelvin Neo, and this is a techie's personal portfolio webpage, showcasing my latest projects and experiences. "/>
 </svelte:head>
 
 <div>
