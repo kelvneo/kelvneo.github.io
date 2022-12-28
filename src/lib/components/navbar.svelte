@@ -1,5 +1,40 @@
 <script lang="ts">
+	
+	import Fa from 'svelte-fa/src/fa.svelte';
+	import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+	import { onMount } from 'svelte';
 	let menuOpened = false;
+	let dark = true;
+
+	function toggleTheme() {
+		dark = !dark
+		saveTheme()
+	}
+
+	function saveTheme() {
+		if (localStorage) {
+			if (dark) {
+				localStorage.setItem('dark', 'true');
+			} else {
+				localStorage.setItem('dark', 'false');
+			}
+		}
+		if (dark) {
+			document.documentElement.classList.add('dark');
+		} else {
+			document.documentElement.classList.remove('dark');
+		}
+	}
+
+	onMount(() => {
+		if (localStorage.dark === 'true' || (!('dark' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+			dark = true;
+		} else {
+			dark = false;
+		}
+		saveTheme();
+	});
+
 </script>
 
 <nav class="bg-white dark:bg-neutral-900 fixed p-4 min-w-full flex flex-col">
@@ -39,6 +74,16 @@
 			<li><a href="#projects">Projects</a></li>
 			<li><a href="#education">Education</a></li>
 			<li><a href="#contact-me">Contact Me</a></li>
+			<li>
+				<button on:click|stopPropagation={toggleTheme} class="align-middle"
+					>
+					{#if dark}
+					<span class="md:hidden mr-2">Light Mode</span><Fa icon={faSun} class="inline-block"/>
+					{:else}
+					<span class="md:hidden mr-2">Dark Mode</span><Fa icon={faMoon} class="inline-block"/>
+					{/if}
+				</button>
+			</li>
 		</ul>
 	</div>
 </nav>
