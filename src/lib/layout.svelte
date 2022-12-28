@@ -1,10 +1,10 @@
 <script>
-	import AboutMe from '$lib/about-me.svelte';
-	import ContactMe from '$lib/contact-me.svelte';
-	import Experiences from '$lib/experiences.svelte';
-	import Hi from '$lib/hi.svelte';
-	import Projects from '$lib/projects.svelte';
-	import Resume from '$lib/resume.svelte';
+	import AboutMe from './about-me.svelte';
+	import ContactMe from './contact-me.svelte';
+    import Education from './education.svelte';
+	import Experiences from './experiences.svelte';
+	import Hi from './hi.svelte';
+	import Projects from './projects.svelte';
 </script>
 
 <svelte:head>
@@ -18,7 +18,7 @@
 		<section id="about-me"><AboutMe /></section>
 		<section id="experiences"><Experiences /></section>
 		<section id="projects"><Projects /></section>
-		<section id="resume"><Resume /></section>
+		<section id="education"><Education /></section>
 		<section id="contact-me"><ContactMe /></section>
 	</div>
 </div>

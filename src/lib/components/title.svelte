@@ -13,7 +13,7 @@
 	<h4 class="text-3xl font-bold">{title}</h4>
 	<div class="flex gap-2 items-center">
 		{#if github}
-			<a href={github} target="_blank"><Fa icon={faGithub} size="lg" /></a>
+			<a href={github} target="_blank" rel="noreferrer"><Fa icon={faGithub} size="lg" /></a>
 		{/if}
 		{#if showSeparator}
 			<span>&#8226;</span>

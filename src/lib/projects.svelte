@@ -12,8 +12,15 @@
 
 	const data: Proj[] = [
 		{
+			title: 'TraceIT - Pandemic Tracing System',
+			github: 'https://github.com/IFS4205-TraceIT/',
+			caption: 'August 2022 to November 2022',
+			subtitle: 'Nuxt 3, Django Rest Framework, HashiCorp Vault, PostgreSQL, and Ansible',
+			description: 'TraceIT aims to be a prototype national pandemic tracing system that utilises information technology to monitor the outbreak and spread of a disease.'
+		},
+		{
 			title: 'My Portfolio',
-			github: 'https://github.com/kelvneo/',
+			github: 'https://github.com/kelvneo/kelvneo.github.io',
 			caption: 'August 2022',
 			subtitle: 'Svelte, Tailwind and FontAwesome',
 			description: 'The website you are viewing now!'

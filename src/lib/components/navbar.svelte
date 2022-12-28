@@ -6,6 +6,7 @@
 	<div class="flex justify-end">
 		<button
 			on:click={() => (menuOpened = !menuOpened)}
+			on:keypress={() => (menuOpened = !menuOpened)}
 			data-collapse-toggle="navbar-default"
 			type="button"
 			class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -30,12 +31,13 @@
 	<div class:hidden={!menuOpened} class="grow w-full md:block md:w-auto" id="navbar-default">
 		<ul
 			on:click={() => (menuOpened = false)}
+			on:keypress={() => (menuOpened = false)}
 			class="flex flex-col text-right p-4 mt-4 gap-4 md:gap-0 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:justify-end"
 		>
 			<li><a href="#about-me">About Me</a></li>
 			<li><a href="#experiences">Experiences</a></li>
 			<li><a href="#projects">Projects</a></li>
-			<li><a href="#resume">Resume</a></li>
+			<li><a href="#education">Education</a></li>
 			<li><a href="#contact-me">Contact Me</a></li>
 		</ul>
 	</div>
