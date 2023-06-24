@@ -77,4 +77,4 @@
 	<p>{description}</p>
 </div>
 
-<svelte:window on:keydown={onKeyDown} />
+<svelte:window on:keydown={onKeyDown}/>

@@ -37,14 +37,14 @@
 
 </script>
 
-<nav class="bg-white dark:bg-neutral-900 fixed p-4 min-w-full flex flex-col">
+<nav class="lg:bg-white lg:dark:bg-neutral-900 fixed p-4 min-w-full flex flex-col border-gray-200 dark:border-gray-800 lg:border-b-0" class:border-b={menuOpened} class:bg-white={menuOpened} class:dark:bg-neutral-900={menuOpened}>
 	<div class="flex justify-end">
 		<button
 			on:click={() => (menuOpened = !menuOpened)}
 			on:keypress={() => (menuOpened = !menuOpened)}
 			data-collapse-toggle="navbar-default"
 			type="button"
-			class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+			class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg bg-gray-100/75 dark:bg-neutral-800/75 lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
 			aria-controls="navbar-default"
 			aria-expanded="false"
 		>
@@ -63,11 +63,11 @@
 			>
 		</button>
 	</div>
-	<div class:hidden={!menuOpened} class="grow w-full md:block md:w-auto" id="navbar-default">
+	<div class:hidden={!menuOpened} class="grow w-full lg:block lg:w-auto" id="navbar-default">
 		<ul
 			on:click={() => (menuOpened = false)}
 			on:keypress={() => (menuOpened = false)}
-			class="flex flex-col text-right p-4 mt-4 gap-4 md:gap-0 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:justify-end"
+			class="flex flex-col text-right p-4 mt-4 gap-4 lg:gap-0 lg:flex-row lg:space-x-8 lg:mt-0 lg:text-sm lg:font-medium lg:border-0 lg:justify-end"
 		>
 			<li><a href="#about-me">About Me</a></li>
 			<li><a href="#experiences">Experiences</a></li>
@@ -78,9 +78,9 @@
 				<button on:click|stopPropagation={toggleTheme} class="align-middle"
 					>
 					{#if dark}
-					<span class="md:hidden mr-2">Light Mode</span><Fa icon={faSun} class="inline-block"/>
+					<span class="lg:hidden mr-2">Light Mode</span><Fa icon={faSun} class="inline-block"/>
 					{:else}
-					<span class="md:hidden mr-2">Dark Mode</span><Fa icon={faMoon} class="inline-block"/>
+					<span class="lg:hidden mr-2">Dark Mode</span><Fa icon={faMoon} class="inline-block"/>
 					{/if}
 				</button>
 			</li>
