@@ -10,9 +10,15 @@
 
 	const data: Exp[] = [
 		{
+			title: 'Backend Engineer',
+			subtitle: 'TikTok / ByteDance',
+			caption: 'June 2023 to Present',
+			description: []
+		},
+		{
 			title: 'Software Engineer Intern',
 			subtitle: 'Visa Inc',
-			caption: 'May 2022 to Aug 2022',
+			caption: 'May 2022 to August 2022',
 			description: [
 				'Developed user interface for automation with ASP.NET and Javascript for network operations team, reducing error from manual checks in OSPF and BGP servers.'
 			]
@@ -48,8 +54,8 @@
 	];
 </script>
 
-<div class="flex flex-col justify-center gap-8 px-8 pt-32 md:px-32">
-	<h1 class="text-purple-700 text-5xl font-bold md:text-6xl">Experiences</h1>
+<div class="flex flex-col justify-center gap-8 pt-32">
+	<h1 class="text-cyan-700 text-5xl font-bold md:text-6xl">Experiences</h1>
 	<div class="flex flex-col justify-center gap-16">
 		{#each data as exp}
 			<Experience {...exp} />

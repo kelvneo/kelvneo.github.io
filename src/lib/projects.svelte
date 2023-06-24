@@ -5,7 +5,7 @@
 		title: string;
 		subtitle: string;
 		caption: string;
-		github: string;
+		github?: string;
 		description: string;
 		gallery?: string[];
 	}
@@ -53,7 +53,6 @@
 		},
 		{
 			title: 'ArcaDOVE',
-			github: 'https://github.com/kelvneo/TheOffApp',
 			caption: 'September 2017 to February 2018',
 			subtitle: 'Angular, Express, Docker and MySQL',
 			description:
@@ -62,8 +61,8 @@
 	];
 </script>
 
-<div class="flex flex-col justify-center gap-8 px-8 pt-32 md:px-32">
-	<h1 class="text-purple-700 text-5xl font-bold md:text-6xl">Projects</h1>
+<div class="flex flex-col justify-center gap-8 pt-32">
+	<h1 class="text-cyan-700 text-5xl font-bold md:text-6xl">Projects</h1>
 	<div class="flex flex-col justify-center gap-16">
 		{#each data as proj}
 			<Project {...proj} />
